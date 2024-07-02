@@ -1,0 +1,276 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: Helvetica;
+  font-size: 16px;
+  max-width: -10px;
+
+}
+
+/* mobile view style */
+legend {
+  top: 1rem;
+    font-size: 2rem;
+    position: absolute;
+    /* margin-bottom: 5px; */
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 3%;
+    border: 1px;
+    border-style: solid;
+    border-color: #DDD;
+    margin-left: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-top: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    margin: auto;
+  }
+  
+  .container {
+    position: relative;
+    padding: 2rem;
+    box-sizing: border-box;
+    max-width: 25rem;
+  }
+  
+  input {
+    width: 15rem;
+    margin-top: 1.5rem;
+    /* margin-bottom: 1rem; */
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    width: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #6495ED;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+
+  /* .box1, .box2, .box3 {
+    max-width: 25rem;
+  } */
+  
+
+
+/* tablet view style */
+@media (min-width: 40rem) {
+  legend  {
+    
+
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 4%;
+    border: 1px;
+    border-style: solid;
+    margin-left: 2.5rem;
+    border-color: #DDD;
+  }
+
+  .box1 {
+    grid-area: fn;
+    justify-items: start;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .box2 {
+    grid-area: em;
+    justify-items: start;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    margin-left: 50px;
+  }
+
+  .box3 {
+    grid-area: ms;
+  }
+
+  /* .combinedbox {
+    display: flex;
+    flex-direction: row;
+  } */
+
+  form {
+    display: grid;
+    grid-template-areas: "fn em"
+    "ms ms"
+    ;
+    max-width: 40rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    font-size: 18px;
+  }
+
+
+  .container {
+    padding: 1.5rem;
+    box-sizing: border-box;
+    max-width: 40rem;
+    font-size: 18px;
+  }
+
+
+  input {
+    display: block;
+    width: 93%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 0.5rem;
+    margin-right: 10px;
+    font-size: 18px;
+    
+  }
+
+  textarea {
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 18px;
+    width: 93%;
+  }
+
+  button {
+    display: inline-block;
+    width: 35%;
+    background-color: #6495ED;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+
+}
+
+/* desktop view style  */
+@media (min-width: 50rem) {
+  legend  {
+   
+  
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 4%;
+    border: 1.5px;
+    border-style: solid;
+    margin-left: 3rem;
+    border-color: #DDD;
+  }
+
+  .box1 {
+    
+    justify-items: start;
+    text-align: left;
+  }
+
+  .box2 {
+    
+    justify-items: start;
+    text-align: left;
+    margin-left: 75px;
+    padding-left: 74px;
+  }
+
+  /* .combinedbox {
+    display: flex;
+    flex-direction: row;
+  } */
+
+  form {
+  
+    min-width: 50rem;
+    padding: 4rem;
+    margin-top: 4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 2.5rem;
+    box-sizing: border-box;
+    max-width: 50rem;
+    font-size: 20px;
+  }
+
+  input {
+    display: block;
+    width: 93%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 0.5rem;
+    margin-right: 13px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  textarea {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 1.9rem;
+  }
+
+  button {
+    display: inline-block;
+    font-size: 20px;
+    width: 30%;
+    background-color: #6495ED;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+  }
+
+}
